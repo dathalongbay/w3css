@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+        .overflow {
+            background-color: orange;
+            width: 200px;
+        
+            margin-left: 20px;
+            border: 1px solid red;
+            display: inline-block;
+            height: 150px;
+        }
+
+        .visible {
+            overflow: visible;
+        }
+
+        .hidden {
+            overflow: hidden;
+        }
+
+        .scroll {
+            overflow: scroll;
+        }
+
+        .auto {
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <pre>
+        Thuộc tính css overflow ( tràn )
+        The CSS overflow property controls what happens to content that is too big to fit into an area.
+        Thuộc tính css overflow kiểm soát điều gì sẽ xảy ra khi nội dung quá lớn không vừa vào trong thẻ html 
+
+        Các giá trị của css overflow :
+        - visible ( hiển thị phần tràn ra ngoài ) giá trị mặc định 
+        - hidden ( ẩn tràn ra ngoài)
+        - scroll ( hiển thị thanh scroll chuột bất kể nội dung có tràn ra ngoài hay ko)
+        - auto ( hiển thi thành scroll khi nội dung tràn ra ngoài và không hiển thị thanh scroll nếu nội dung không tràn ra ngoài)
+    </pre>
+
+    <div class="overflow visible">
+        <h1>visible</h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. A doloremque, ad qui impedit corrupti nam consequatur id non perspiciatis modi et quidem. Nostrum autem iste, animi minus dicta facere corporis?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. In nisi, natus repellendus magni nam aliquid sint. Quas tempore, tenetur neque aliquam quo obcaecati explicabo asperiores nostrum quisquam, cum recusandae corrupti.
+    </div>
+
+
+    <div class="overflow hidden">
+        <h1>Hidden</h1>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore deleniti placeat suscipit architecto, accusantium similique nemo laudantium odio quidem iusto corporis quibusdam officiis eum repellendus quam odit deserunt beatae. A!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit odit provident voluptatum voluptate saepe repellendus, nulla adipisci, fugiat ducimus harum hic delectus porro excepturi maxime. Optio fugiat impedit ut suscipit.
+    </div>
+
+
+    <div class="overflow scroll">
+        <h1>Scroll</h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam voluptas non veritatis possimus mollitia illum! Aperiam, dicta et! Voluptatibus optio dolor aspernatur dignissimos eos deserunt illo, fugiat odio unde quis?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, quas? Quia iure, error omnis doloribus eaque nostrum laborum minus porro eius, numquam quo adipisci deserunt ut maxime deleniti voluptates et!
+    </div>
+
+
+    <div class="overflow auto">
+        <h1>auto</h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse tempora exercitationem odio facilis dolores quia cupiditate blanditiis eligendi temporibus quidem eum numquam eos quisquam soluta, reprehenderit, dolore autem aliquam repellat.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus dolorem recusandae, quo velit laudantium minima possimus nesciunt delectus aliquid! Iusto, fugiat! Doloribus ratione deserunt repellendus ad nam. Ut, sunt corporis.
+    
+    
+    </div>
+</body>
+</html>

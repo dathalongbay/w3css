@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+        div {
+            background-color: green;
+            width: 200px;
+            height: 200px;
+            margin-bottom: 10px;
+
+            display: inline-block;
+        }
+
+        span {
+            background-color: orange;
+            width: 200px;
+            height: 200px;
+            margin-bottom: 10px;
+
+            display: inline-block;
+        }
+    
+    </style>
+</head>
+<body>
+    <pre>
+        giá trị display: inline-block;
+        inline-block là 1 sự kết hợp của giá trị block và giá trị inline 
+        - chú ý với display: inline; không thể nào đặt được thuộc tính width và height cho 1 thẻ html 
+        - TH1 dùng display: inline-block; cho nhóm thẻ inline như span , a , img khi chúng ta muốn giữ được 2 đặc điểm luôn nằm trên cùng 1 hàng và chiều rộng chi 
+        chiếm tương ứng với nội dung có sẵn nhưng cần đặt thuộc tính width và height 
+        - TH2 dùng display: inline-block; muốn các thẻ thuộc nhóm block như div , p , h1 ... vẫn có thể đặt được chiều rộng hay chiều cao
+        nhưng sẽ nằm trên cùng 1 hàng giống thẻ inline
+
+        display: inline-block;
+        lấy đặc điểm nằm trên cùng 1 hàng của nhóm inline 
+        lấy đặc điểm đặt được chiều rộng width và chiều cao height của nhóm thẻ block
+
+        - chú ý chỉ có thể áp dụng width và height khi display của thẻ là block hoặc inline-block
+
+
+    </pre>
+
+    <div>
+        Thẻ div số 1
+    </div>
+
+    <div>
+        Thẻ div số 2
+    </div>
+
+    <div>
+        Thẻ div số 3
+    </div>
+
+    <span>
+        span inline 1
+    </span>
+
+    <span>
+        span inline 2
+    </span>
+
+
+    <span>
+        span inline 3
+    </span>
+</body>
+</html>
